@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Assignment 02</title>
+<script>
+
+	var animal = function(name) {
+		this.name = name;
+	}
+
+	var rabbit = function(breed) {
+		this.breed = breed;
+	}
+
+	var a = new animal("ANIMAL");
+	var r = new rabbit("RABBIT");
+
+	r.__proto__ = a;
+	alert(r.name);
+	alert(r.breed);
+
+</script>
+</head>
+<body>
+</body>
+</html>
